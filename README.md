@@ -6,6 +6,6 @@
 - The second button i.e. +4 will add 4 points to total score
 - The third button i.e. -2 will subtract 2 points to total score
 
-# Compoents Used
+# Components Used
 
 - View Models & Fragments
