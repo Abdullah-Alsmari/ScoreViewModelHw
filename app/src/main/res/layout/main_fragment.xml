@@ -4,68 +4,75 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/totalText"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-   tools:context=".MainFragment">
+    android:layout_height="match_parent">
 
-    <TextView
-        android:id="@+id/totalScore"
-        android:layout_width="176dp"
-        android:layout_height="100dp"
-        android:text=" 0 "
-        android:textAlignment="center"
-        android:textSize="33dp"
-
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.931"
+    <ImageView
+        android:layout_width="match_parent"
+        android:background="@drawable/kids2"
+        android:alpha="0.3"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.228" />
+        android:layout_height="match_parent"/>
+    <TextView
+        android:id="@+id/totalScore"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:text=" 0 "
+        android:gravity="center"
+        android:textSize="38sp"
+        android:layout_marginTop="20dp"
+        android:textColor="@android:color/background_dark"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button"
 
-    <Button
-        android:id="@+id/button"
-        android:layout_width="139dp"
-
-        android:layout_height="51dp"
-        android:layout_marginTop="32dp"
-        android:layout_marginEnd="216dp"
-        android:text="add 1 point"
-        app:layout_constraintEnd_toEndOf="@+id/totalScore"
-        app:layout_constraintTop_toBottomOf="@+id/totalScore" />
-
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="28dp"
-        android:text="Add 4 points "
-        app:layout_constraintEnd_toEndOf="@+id/button"
-        app:layout_constraintTop_toBottomOf="@+id/button" />
-
-    <Button
-        android:id="@+id/button3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:text="sub 2 points "
-        app:layout_constraintEnd_toEndOf="@+id/button2"
-        app:layout_constraintTop_toBottomOf="@+id/button2" />
+        />
 
     <TextView
-        android:id="@+id/textView"
-        android:layout_width="190dp"
-        android:layout_height="102dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginBottom="84dp"
-        android:text="Total Score"
-        android:textAllCaps="true"
-        android:textSize="34sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/button"
-        app:layout_constraintEnd_toStartOf="@+id/totalScore"
-        app:layout_constraintHorizontal_bias="0.0"
+        android:id="@+id/button"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="200dp"
+        android:background="@drawable/circular_text_view"
+        android:gravity="center"
+        android:layout_marginStart="60dp"
+        android:text="+1"
+
+        android:textColor="@android:color/white"
+        android:textSize="24sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/totalScore"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toTopOf="parent"
+
+        />
+
+    <TextView
+        android:id="@+id/button2"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="200dp"
+        android:background="@drawable/circular_text_view"
+        android:gravity="center"
+        android:text="+4"
+        android:layout_marginEnd="60dp"
+        android:textColor="@android:color/white"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/button3"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:background="@drawable/circular_text_view"
+        android:gravity="center"
+        android:text="- 2"
+        android:layout_marginTop="20dp"
+        android:textColor="@android:color/white"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/totalScore" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
