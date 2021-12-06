@@ -14,3 +14,7 @@
 # Components Used
 
 - View Models & Fragments
+
+# Reference 
+- https://developer.android.com/topic/libraries/architecture/viewmodel
+- https://developer.android.com/guide/fragments
